@@ -37,6 +37,7 @@ app.use(views(__dirname + '/views', {
   extension: 'pug'
 }))
 
+
 //日志
 const env = process.env.NODE_ENV || 'dev'
 var accessLogStream = fs.createWriteStream(path.join(__dirname, 'log', 'access.log'), {
